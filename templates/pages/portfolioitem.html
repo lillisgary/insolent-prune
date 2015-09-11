@@ -22,12 +22,12 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="active item">
-                <img src="{{ MEDIA_URL }}{{ page.portfolioitem.featured_image }}" class="img-responsive" alt="">
+                <img src="{{ MEDIA_URL }}{{ page.portfolioitem.featured_image }}" class="img-responsive" alt="" height="400" width="700">
                 <h2>Slide 1</h2>              
             </div>
           {% for slide in page.portfolioitem.images.all %}
             <div class="item">
-                <img src="{{ MEDIA_URL }}{{ slide.file }}" alt="">
+                <img src="{{ MEDIA_URL }}{{ slide.file }}" alt="" height="700" width="400">
                 <h2>Slide 1</h2>                
             </div>
           {% endfor %}
